@@ -53,8 +53,8 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
+&:hover,
+&:focus {
   color: var(--accent-color);
 }
 
