@@ -19,16 +19,15 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 
-.socials__icon--link:hover,
-.socials__icon--link:focus {
-  background-color: var(--accent-color);
-}
-
-.socials__icon--link:hover .socials__icon--svg,
-.socials__icon--link:focus .socials__icon--svg {
-  fill: var(--dark-bg-text);
+  &:hover .socials__icon--svg,
+  &:focus .socials__icon--svg {
+    fill: var(--dark-bg-text);
+  }
 }
 
 .socials__icon--svg {

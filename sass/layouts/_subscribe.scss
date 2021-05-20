@@ -21,12 +21,10 @@
   outline: none;
   font-size: 16px;
   line-height: 1.25;
-
-  color: rgba(255, 255, 255);
-}
-
-.subscribe__field:focus {
-  border-color: var(--accent-color);
+  color: var(--dark-bg-text);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .subscribe__btn {

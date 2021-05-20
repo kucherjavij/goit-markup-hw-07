@@ -25,16 +25,15 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.clients__link:hover .clients__icon-svg,
-.clients__link:focus .clients__icon-svg {
-  fill: var(--accent-color);
+  &:hover .clients__icon-svg,
+  &:focus .clients__icon-svg {
+    fill: var(--accent-color);
+  }
 }
 
 .clients__icon-svg {

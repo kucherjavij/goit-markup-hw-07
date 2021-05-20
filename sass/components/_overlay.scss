@@ -15,11 +15,6 @@
   overflow: hidden;
 }
 
-.overlay__txt--container:hover,
-.overlay__txt--container:focus {
-  opacity: 1;
-}
-
 .overlay__txt--container {
   display: inline-block;
   content: "";
@@ -34,6 +29,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: translateY(100%);
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .overlay__txt {

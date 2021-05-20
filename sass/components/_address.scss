@@ -6,11 +6,11 @@
   color: var(--dark-bg-text);
 }
 
-.address li a {
+.address__item a {
   color: var(--mail-tel-color);
 }
 
-.address li {
+.address__item {
   display: flex;
   margin-top: 10px;
 }

@@ -41,6 +41,11 @@
   background-color: var(--dark-bg-text);
 
   box-sizing: border-box;
+
+  &:focus .modal__close--svg,
+  &:hover .modal__close--svg {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__close--svg {
@@ -53,11 +58,6 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close--btn:focus .modal__close--svg,
-.modal__close--btn:hover .modal__close--svg {
-  fill: var(--accent-color);
 }
 
 .modal__form--container {
@@ -98,21 +98,19 @@
   border-radius: 4px;
   outline: none;
   font-size: 16px;
-}
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--logo-black-cl);
+    -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg-text) inset;
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.modal__form--field:-webkit-autofill,
-.modal__form--field:-webkit-autofill:hover,
-.modal__form--field:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--logo-black-cl);
-  -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg-text) inset;
-}
-
-.modal__form--field:focus {
-  border-color: var(--accent-color);
-}
-
-.modal__form--field:focus + .modal__form--svg {
-  fill: var(--accent-color);
+  &:focus + .modal__form--svg {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__form--message {

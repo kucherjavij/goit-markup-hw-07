@@ -8,6 +8,10 @@
 .nav__link {
   display: block;
   position: relative;
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 }
 
 .nav__link::after {
@@ -28,9 +32,4 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav__link:hover::after,
-.nav__link:focus::after {
-  opacity: 1;
 }

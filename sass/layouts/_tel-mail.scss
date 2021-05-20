@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.tel-mail li:not(:last-child) {
+.tel-mail__item:not(:last-child) {
   margin-right: 50px;
 }
 
