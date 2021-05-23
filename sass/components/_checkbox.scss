@@ -4,16 +4,15 @@
   justify-content: center;
   margin-top: 20px;
   width: 100%;
-}
-
-.checkbox__label::before {
-  content: "";
-  display: inline-block;
-  margin-right: 7px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--logo-black-cl);
-  border-radius: 2px;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--logo-black-cl);
+    border-radius: 2px;
+  }
 }
 
 .checkbox:checked + .checkbox__label::before {

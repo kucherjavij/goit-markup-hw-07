@@ -1,9 +1,8 @@
 .tel-mail {
   display: flex;
-}
-
-.tel-mail__item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .tel-mail__link {
